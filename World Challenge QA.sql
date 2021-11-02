@@ -39,4 +39,4 @@ SELECT * FROM country WHERE SurfaceArea IS NOT NULL ORDER BY SurfaceArea desc LI
 -- QUESTION 11
 SELECT name FROM city WHERE countrycode = "JPN" ORDER BY Population desc LIMIT 5;
 
-
+-- Didn't manage to finish many of the questions and some of the work is all over the place, going to spend some more time on this later. 
