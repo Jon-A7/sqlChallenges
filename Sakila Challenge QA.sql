@@ -80,6 +80,9 @@ SELECT film_id, title, description, release_year, COUNT(title) FROM film WHERE r
 SELECT * FROM film_category;
 SELECT * FROM category;
  
-  SELECT fc.category_id,cg.name,f.film_id, f.title, f.description
+  SELECT fc.category_id,f.film_id, f.title, f.description
   FROM film f
-  JOIN film_category fc ON f.category_id=fc.category_id;
+  JOIN film_category fc ON f.film_id=fc.film_id;
+  
+--   cg.name,
+--   JOIN category cg ON fc.catgeory_id=cg.category_id
